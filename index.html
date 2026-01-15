@@ -6539,53 +6539,69 @@
             <h2 style="color: white; font-size: 2rem; line-height: 1.2; font-weight: 700; margin: 0;">🎯 Ruleta de Conocimiento</h2>
             <p style="color: rgba(255, 255, 255, 0.95); font-size: 0.95rem; margin-top: 10px; font-weight: 400;">¡Pon a prueba tu aprendizaje de forma divertida!</p>
         </div>
-        <div class="slide-content" style="padding: 30px 40px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div class="slide-content" style="padding: 20px 30px; overflow-y: auto; display: flex; flex-direction: column;">
             
             <!-- Instrucciones -->
-            <div style="background: linear-gradient(135deg, rgba(142, 68, 173, 0.12), rgba(130, 10, 209, 0.08)); border: 2px solid rgba(130, 10, 209, 0.3); border-radius: 12px; padding: 15px 20px; margin-bottom: 25px; max-width: 800px; width: 100%; text-align: center;">
+            <div style="background: linear-gradient(135deg, rgba(142, 68, 173, 0.12), rgba(130, 10, 209, 0.08)); border: 2px solid rgba(130, 10, 209, 0.3); border-radius: 12px; padding: 12px 20px; margin-bottom: 20px; text-align: center;">
                 <p style="margin: 0; font-size: 0.85rem; color: #555; line-height: 1.5;">
                     <strong style="color: #820AD1;">¿Cómo funciona?</strong> Gira la ruleta y responde la pregunta que te toque. ¡Todos pueden participar!
                 </p>
             </div>
 
-            <!-- Contenedor de la ruleta -->
-            <div style="position: relative; margin-bottom: 30px;">
-                <!-- Canvas para la ruleta -->
-                <canvas id="rouletteCanvas" width="400" height="400" style="border-radius: 50%; box-shadow: 0 8px 30px rgba(130, 10, 209, 0.3);"></canvas>
+            <!-- Contenedor horizontal: Ruleta + Preguntas -->
+            <div style="display: flex; gap: 25px; align-items: flex-start; justify-content: center; flex-wrap: wrap;">
                 
-                <!-- Botón central -->
-                <button id="spinButton" onclick="spinRoulette()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #820AD1, #6a1b9a); color: white; border: 4px solid white; font-size: 1.1rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;" onmouseover="this.style.transform='translate(-50%, -50%) scale(1.05)'" onmouseout="this.style.transform='translate(-50%, -50%) scale(1)'">
-                    GIRAR
-                </button>
-                
-                <!-- Indicador (flecha) -->
-                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 25px solid #820AD1; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3)); z-index: 11;"></div>
-            </div>
-
-            <!-- Área de pregunta -->
-            <div id="questionArea" style="display: none; background: white; border: 3px solid #820AD1; border-radius: 15px; padding: 25px; max-width: 750px; width: 100%; box-shadow: 0 6px 20px rgba(130, 10, 209, 0.2); animation: fadeIn 0.5s;">
-                <h3 id="questionCategory" style="color: #820AD1; margin: 0 0 15px 0; font-size: 1.1rem; font-weight: 700; text-align: center;"></h3>
-                <p id="questionText" style="color: #333; font-size: 0.95rem; line-height: 1.6; margin: 0 0 20px 0; text-align: center; font-weight: 600;"></p>
-                
-                <!-- Opciones de respuesta -->
-                <div id="optionsContainer" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
-                    <!-- Las opciones se generarán dinámicamente -->
+                <!-- Lado izquierdo: Ruleta -->
+                <div style="flex-shrink: 0;">
+                    <div style="position: relative;">
+                        <!-- Canvas para la ruleta -->
+                        <canvas id="rouletteCanvas" width="380" height="380" style="border-radius: 50%; box-shadow: 0 8px 30px rgba(130, 10, 209, 0.3);"></canvas>
+                        
+                        <!-- Botón central -->
+                        <button id="spinButton" onclick="spinRoulette()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95px; height: 95px; border-radius: 50%; background: linear-gradient(135deg, #820AD1, #6a1b9a); color: white; border: 4px solid white; font-size: 1.05rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; z-index: 10;" onmouseover="this.style.transform='translate(-50%, -50%) scale(1.05)'" onmouseout="this.style.transform='translate(-50%, -50%) scale(1)'">
+                            GIRAR
+                        </button>
+                        
+                        <!-- Indicador (flecha) -->
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 25px solid #820AD1; filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3)); z-index: 11;"></div>
+                    </div>
                 </div>
 
-                <!-- Feedback de respuesta -->
-                <div id="answerFeedback" style="display: none; padding: 15px; border-radius: 10px; margin-bottom: 15px; text-align: center;">
-                    <p id="feedbackText" style="margin: 0; font-size: 0.9rem; font-weight: 600;"></p>
-                    <p id="feedbackExplanation" style="margin: 8px 0 0 0; font-size: 0.8rem; line-height: 1.5;"></p>
+                <!-- Lado derecho: Área de preguntas -->
+                <div style="flex: 1; min-width: 350px; max-width: 600px;">
+                    <div id="questionArea" style="display: none; background: white; border: 3px solid #820AD1; border-radius: 15px; padding: 25px; box-shadow: 0 6px 20px rgba(130, 10, 209, 0.2); animation: fadeIn 0.5s;">
+                        <h3 id="questionCategory" style="color: #820AD1; margin: 0 0 15px 0; font-size: 1.1rem; font-weight: 700; text-align: center;"></h3>
+                        <p id="questionText" style="color: #333; font-size: 0.95rem; line-height: 1.6; margin: 0 0 20px 0; text-align: left; font-weight: 600;"></p>
+                        
+                        <!-- Opciones de respuesta -->
+                        <div id="optionsContainer" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+                            <!-- Las opciones se generarán dinámicamente -->
+                        </div>
+
+                        <!-- Feedback de respuesta -->
+                        <div id="answerFeedback" style="display: none; padding: 15px; border-radius: 10px; margin-bottom: 15px; text-align: center;">
+                            <p id="feedbackText" style="margin: 0; font-size: 0.9rem; font-weight: 600;"></p>
+                            <p id="feedbackExplanation" style="margin: 8px 0 0 0; font-size: 0.8rem; line-height: 1.5;"></p>
+                        </div>
+                        
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            <button id="nextQuestionBtn" onclick="nextQuestion()" style="display: none; background: linear-gradient(135deg, #820AD1, #6a1b9a); color: white; border: none; padding: 12px 30px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s; box-shadow: 0 3px 10px rgba(130, 10, 209, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(130, 10, 209, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 10px rgba(130, 10, 209, 0.3)'">
+                                ✅ Siguiente Pregunta
+                            </button>
+                            <button onclick="hideQuestion()" style="background: white; color: #820AD1; border: 2px solid #820AD1; padding: 12px 30px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='white'">
+                                Ocultar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mensaje inicial antes de girar -->
+                    <div id="initialMessage" style="background: linear-gradient(135deg, rgba(130, 10, 209, 0.1), rgba(142, 68, 173, 0.05)); border: 2px solid rgba(130, 10, 209, 0.2); border-radius: 15px; padding: 40px 30px; text-align: center;">
+                        <div style="font-size: 3.5rem; margin-bottom: 15px;">🎯</div>
+                        <h3 style="color: #820AD1; margin: 0 0 10px 0; font-size: 1.2rem; font-weight: 700;">¡Gira la ruleta!</h3>
+                        <p style="color: #555; font-size: 0.9rem; line-height: 1.6; margin: 0;">Haz clic en el botón GIRAR para obtener una pregunta aleatoria y poner a prueba tu conocimiento sobre ACQ.</p>
+                    </div>
                 </div>
-                
-                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                    <button id="nextQuestionBtn" onclick="nextQuestion()" style="display: none; background: linear-gradient(135deg, #820AD1, #6a1b9a); color: white; border: none; padding: 12px 30px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s; box-shadow: 0 3px 10px rgba(130, 10, 209, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 5px 15px rgba(130, 10, 209, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 10px rgba(130, 10, 209, 0.3)'">
-                        ✅ Siguiente Pregunta
-                    </button>
-                    <button onclick="hideQuestion()" style="background: white; color: #820AD1; border: 2px solid #820AD1; padding: 12px 30px; border-radius: 25px; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: all 0.3s;" onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='white'">
-                        Ocultar
-                    </button>
-                </div>
+
             </div>
 
             <style>
@@ -6632,16 +6648,16 @@
     </div>
 
     <script>
-        // Configuración de la ruleta
+        // Configuración de la ruleta con nombres más cortos
         const segments = [
-            { color: '#9c27b0', label: 'Acquisition', category: '🎯 Acquisition' },
-            { color: '#7b1fa2', label: 'Journey', category: '📊 Journey del Cliente' },
-            { color: '#6a1b9a', label: 'Contact Reasons', category: '🔧 Contact Reasons' },
-            { color: '#8e44ad', label: 'Resultado Solicitud', category: '📋 Resultado de Solicitud' },
-            { color: '#9b59b6', label: 'Producto no ofertado', category: '💡 Producto no ofertado' },
-            { color: '#ba68c8', label: 'Errores', category: '⚠️ Errores en registro' },
-            { color: '#ab47bc', label: 'Reactivación', category: '🔄 Reactivación' },
-            { color: '#ce93d8', label: 'Referidos', category: '👥 Programa de referidos' }
+            { color: '#9c27b0', label: 'ACQ', category: '🎯 Acquisition', fullName: 'Acquisition' },
+            { color: '#7b1fa2', label: 'Journey', category: '📊 Journey del Cliente', fullName: 'Journey' },
+            { color: '#6a1b9a', label: 'Contact\nReasons', category: '🔧 Contact Reasons', fullName: 'Contact Reasons' },
+            { color: '#8e44ad', label: 'Resultado', category: '📋 Resultado de Solicitud', fullName: 'Resultado Solicitud' },
+            { color: '#9b59b6', label: 'Producto\nno ofertado', category: '💡 Producto no ofertado', fullName: 'Producto no ofertado' },
+            { color: '#ba68c8', label: 'Errores', category: '⚠️ Errores en registro', fullName: 'Errores' },
+            { color: '#ab47bc', label: 'Reactiva-\nción', category: '🔄 Reactivación', fullName: 'Reactivación' },
+            { color: '#ce93d8', label: 'Referidos', category: '👥 Programa de referidos', fullName: 'Referidos' }
         ];
 
         // Preguntas por categoría con opciones múltiples
@@ -6932,7 +6948,7 @@
         // Configurar canvas de alta resolución
         function setupCanvas() {
             const dpr = window.devicePixelRatio || 1;
-            const displaySize = 400;
+            const displaySize = 380;
             
             canvas.width = displaySize * dpr;
             canvas.height = displaySize * dpr;
@@ -6944,10 +6960,10 @@
 
         // Dibujar la ruleta inicial
         function drawRoulette() {
-            const displaySize = 400;
+            const displaySize = 380;
             const centerX = displaySize / 2;
             const centerY = displaySize / 2;
-            const radius = 180;
+            const radius = 175;
             const anglePerSegment = (2 * Math.PI) / segments.length;
 
             // Limpiar canvas
@@ -6971,25 +6987,35 @@
                 ctx.lineWidth = 3;
                 ctx.stroke();
 
-                // Dibujar texto con mejor calidad
+                // Dibujar texto (con soporte para multilinea)
                 ctx.save();
                 ctx.translate(centerX, centerY);
                 ctx.rotate(startAngle + anglePerSegment / 2);
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
                 ctx.fillStyle = 'white';
-                ctx.font = 'bold 14px Inter, sans-serif';
-                ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
-                ctx.shadowBlur = 2;
+                ctx.font = 'bold 13px Inter, sans-serif';
+                ctx.shadowColor = 'rgba(0, 0, 0, 0.4)';
+                ctx.shadowBlur = 3;
                 ctx.shadowOffsetX = 0;
                 ctx.shadowOffsetY = 1;
-                ctx.fillText(segment.label, radius / 1.5, 0);
+                
+                // Manejar texto multilinea
+                const lines = segment.label.split('\n');
+                const lineHeight = 16;
+                const totalHeight = lines.length * lineHeight;
+                const startY = -(totalHeight / 2) + (lineHeight / 2);
+                
+                lines.forEach((line, i) => {
+                    ctx.fillText(line, radius / 1.6, startY + (i * lineHeight));
+                });
+                
                 ctx.restore();
             });
 
             // Círculo central
             ctx.beginPath();
-            ctx.arc(centerX, centerY, 50, 0, 2 * Math.PI);
+            ctx.arc(centerX, centerY, 48, 0, 2 * Math.PI);
             ctx.fillStyle = 'white';
             ctx.shadowColor = 'rgba(0, 0, 0, 0.2)';
             ctx.shadowBlur = 8;
@@ -7045,8 +7071,8 @@
             const selectedIndex = Math.floor((2 * Math.PI - normalizedRotation + anglePerSegment / 2) / anglePerSegment) % segments.length;
             const selectedSegment = segments[selectedIndex];
 
-            // Seleccionar pregunta aleatoria de esa categoría
-            const categoryQuestions = questions[selectedSegment.label];
+            // Seleccionar pregunta aleatoria de esa categoría usando fullName
+            const categoryQuestions = questions[selectedSegment.fullName];
             currentQuestion = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)];
 
             // Mostrar pregunta y categoría
@@ -7069,7 +7095,8 @@
             document.getElementById('answerFeedback').style.display = 'none';
             document.getElementById('nextQuestionBtn').style.display = 'none';
             
-            // Mostrar área de pregunta
+            // Ocultar mensaje inicial y mostrar área de pregunta
+            document.getElementById('initialMessage').style.display = 'none';
             document.getElementById('questionArea').style.display = 'block';
         }
 
@@ -7117,11 +7144,13 @@
 
         function nextQuestion() {
             document.getElementById('questionArea').style.display = 'none';
+            document.getElementById('initialMessage').style.display = 'block';
             currentQuestion = null;
         }
 
         function hideQuestion() {
             document.getElementById('questionArea').style.display = 'none';
+            document.getElementById('initialMessage').style.display = 'block';
             currentQuestion = null;
         }
 
