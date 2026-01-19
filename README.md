@@ -62,7 +62,7 @@ Entrenamiento-ACQ-GitHub/
 10. 👥 **Programa de referidos** - Prototipo animado de la app
 11. 📱 **Registro e información** - Proceso de inscripción + 5 tabs
 12. 🔐 **Dudas en app** - Ruta de activación y pantalla principal
-13. 📄 **Información adicional** - Documentación solicitada (Regsol, PEPs)
+13. 📄 **Información adicional** - TAG PEP, TAG KYC, TAG INFO (Regsol)
 14. 🎁 **Campañas y Beneficios** - Promociones activas
 15. 💳 **Tarjeta Abre Caminos** - ⏳ *Próximamente* (contenido en preparación)
 
@@ -200,6 +200,11 @@ Esta herramienta contiene información confidencial y debe ser utilizada únicam
 - Personal de Nu Colombia con autorización
 
 ## 🚀 Actualizaciones Recientes
+
+### Versión 2.3 (Enero 2026)
+- ✅ **Slide 13 actualizada**: Eliminado tab "Rechazos/Cancelaciones" (tema descontinuado)
+- ✅ Tabs activos: TAG PEP, TAG KYC, TAG INFO
+- ✅ Contenido optimizado para información adicional en flujo de registro
 
 ### Versión 2.2 (Enero 2026)
 - ✅ **Tarjeta Abre Caminos**: Marcada como "Próximamente" hasta su lanzamiento oficial
