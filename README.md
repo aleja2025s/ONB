@@ -64,12 +64,14 @@ Entrenamiento-ACQ-GitHub/
 12. 🔐 **Dudas en app** - Ruta de activación y pantalla principal
 13. 📄 **Información adicional** - Documentación solicitada (Regsol, PEPs)
 14. 🎁 **Campañas y Beneficios** - Promociones activas
-15. 💳 **Tarjeta Abre Caminos** - Producto especial
+15. 💳 **Tarjeta Abre Caminos** - ⏳ *Próximamente* (contenido en preparación)
+
 
 ### Slides Finales (16-18)
-16. 📚 **Wedukas** - 10 enlaces a documentación oficial
+16. 📚 **Wedukas** - 9 enlaces a documentación oficial (Tarjeta Abre Caminos próximamente)
 17. 📖 **Glosario** - Términos clave por tema
 18. 🎯 **Ruleta de Conocimiento** - Evaluación interactiva
+
 
 ## 🎲 Ruleta de Conocimiento - Detalles
 
@@ -157,7 +159,8 @@ Optimizado para:
 7. [Dudas en app](https://nucolombia.myweduka.com/DocumentFind/Document?idDocument=4604)
 8. [Información adicional](https://nucolombia.myweduka.com/DocumentFind/Document?idDocument=4616)
 9. [Campañas y Beneficios](https://nucolombia.myweduka.com/DocumentFind/Document?idDocument=4600)
-10. [Tarjeta Abre Caminos](https://nucolombia.myweduka.com/DocumentFind/Document?idDocument=4665)
+10. ~~[Tarjeta Abre Caminos](https://nucolombia.myweduka.com/DocumentFind/Document?idDocument=4665)~~ ⏳ *Próximamente*
+
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -171,13 +174,14 @@ Optimizado para:
 ## 📊 Estadísticas del Proyecto
 
 - **18 Slides** totales
-- **11 Contact Reasons** documentados con guías detalladas
+- **11 Contact Reasons** documentados (10 activos + 1 próximamente)
 - **21 Preguntas** en la ruleta de conocimiento
-- **10 Wedukas** integradas con enlaces oficiales
+- **9 Wedukas** activas (1 próximamente)
 - **8 Prototipos visuales** de errores comunes
 - **6 Widgets/Mockups** interactivos (Account Request, Prospects, Person View, etc.)
-- **~7,162 líneas** de código
+- **~5,900 líneas** de código (optimizado)
 - **0 dependencias** externas (fuera de CDN)
+
 
 ## 👥 Créditos
 
@@ -196,6 +200,13 @@ Esta herramienta contiene información confidencial y debe ser utilizada únicam
 - Personal de Nu Colombia con autorización
 
 ## 🚀 Actualizaciones Recientes
+
+### Versión 2.2 (Enero 2026)
+- ✅ **Tarjeta Abre Caminos**: Marcada como "Próximamente" hasta su lanzamiento oficial
+- ✅ Botones desactivados en Slide 5, índice lateral y Wedukas (Slide 16)
+- ✅ Slide 15 actualizado con mensaje de "Información Próximamente"
+- ✅ UX mejorada: alertas informativas al hacer clic en contenido desactivado
+- ✅ Código optimizado: reducción de ~1,300 líneas
 
 ### Versión 2.1 (Enero 2026)
 - ✅ Fuente actualizada a Google Sans para mejor legibilidad
