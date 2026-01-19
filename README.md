@@ -17,17 +17,19 @@ Herramienta de capacitación integral diseñada para el equipo de Acquisition BP
 - **Glosario completo** de términos ACQ
 
 ### 🎮 Ruleta de Conocimiento
-- **24 preguntas** de opción múltiple (3 por categoría)
+- **21 preguntas** de opción múltiple optimizadas
 - **8 categorías** cubriendo todo el entrenamiento
 - **Verificación automática** de respuestas
 - **Explicaciones educativas** para cada pregunta
 - **Feedback visual** (correcto/incorrecto)
 - **Gamificación** para reforzar el aprendizaje
+- **Preguntas prácticas** sin códigos técnicos
 
 ### 🎨 Diseño y UX
-- **Diseño responsive** optimizado para presentaciones
+- **Diseño responsive** optimizado para presentaciones en auditorio
 - **Colores corporativos** Nu Colombia (#820AD1)
-- **Fuente Inter** para legibilidad óptima
+- **Fuente Google Sans** para legibilidad óptima
+- **Tamaños optimizados** (mínimo 0.8rem) para visualización en proyector
 - **Animaciones suaves** y profesionales
 - **Navegación intuitiva** (flechas, teclado, índice)
 
@@ -53,14 +55,14 @@ Entrenamiento-ACQ-GitHub/
 5. **Contact Reasons** - Vista general
 
 ### Contact Reasons Individuales (6-15)
-6. 📋 **Resultado de Solicitud** - Declinado/Cancelado/Erróneo
-7. 💡 **Producto no ofertado** - Transparencia Radical
-8. ⚠️ **Errores en registro** - Error 104, 404, documentos
-9. 🔄 **Reactivación** - Productos cancelados
-10. 👥 **Programa de referidos** - Bonos e invitaciones
-11. 📱 **Registro e información** - Proceso de inscripción
-12. 🔐 **Dudas en app** - Post-login
-13. 📄 **Información adicional** - Documentación solicitada
+6. 📋 **Resultado de Solicitud** - Declinado/Cancelado/Erróneo + Widgets visuales
+7. 💡 **Producto no ofertado** - Transparencia Radical + Templates
+8. ⚠️ **Errores en registro** - 8 prototipos visuales de errores comunes
+9. 🔄 **Reactivación o adquisición de productos** - Proceso detallado en tabs
+10. 👥 **Programa de referidos** - Prototipo animado de la app
+11. 📱 **Registro e información** - Proceso de inscripción + 5 tabs
+12. 🔐 **Dudas en app** - Ruta de activación y pantalla principal
+13. 📄 **Información adicional** - Documentación solicitada (Regsol, PEPs)
 14. 🎁 **Campañas y Beneficios** - Promociones activas
 15. 💳 **Tarjeta Abre Caminos** - Producto especial
 
@@ -76,20 +78,24 @@ Entrenamiento-ACQ-GitHub/
 | Categoría | Preguntas | Temas Cubiertos |
 |-----------|-----------|-----------------|
 | 🎯 Acquisition | 3 | Rol ACQ, productos Nu, prospectos |
-| 📊 Journey | 3 | Acompañamiento, confirmación, homescript |
-| 🔧 Contact Reasons | 3 | Categorización, templates, escalamiento |
+| 📊 Journey | 3 | Acompañamiento, confirmación, pantalla de inicio |
+| 🔧 Contact Reasons | 2 | Categorización, escalamiento |
 | 📋 Resultado Solicitud | 3 | Templates, declinados, cancelados |
-| 💡 Producto no ofertado | 3 | Transparencia, redirección, fechas |
-| ⚠️ Errores | 3 | Error 104, 404, documentos |
+| 💡 Producto no ofertado | 3 | Transparencia Radical, blog Explora Nu |
+| ⚠️ Errores | 3 | Fotos documentos, conexión, validaciones |
 | 🔄 Reactivación | 3 | Tarjeta crédito, Cuenta Nu, proceso |
-| 👥 Referidos | 3 | Incentivos, códigos, requisitos |
+| 👥 Referidos | 1 | Código de referido |
+
+**Total: 21 preguntas** optimizadas y validadas
 
 ### Características de las Preguntas
 - ✅ 4 opciones múltiples (A, B, C, D)
 - ✅ Una respuesta correcta
 - ✅ Explicación educativa después de responder
-- ✅ Feedback visual inmediato
+- ✅ Feedback visual inmediato (verde/rojo)
 - ✅ Deshabilitación de opciones tras seleccionar
+- ✅ Preguntas prácticas enfocadas en soluciones reales
+- ✅ Sin referencias a códigos de error técnicos
 
 ## 💻 Uso
 
@@ -130,7 +136,7 @@ git push -u origin main
 - **Gradiente Fondo:** `#4c0677` → `#6a1b9a` → `#8e44ad`
 - **Morado Oscuro:** `#6a1b9a`, `#7b1fa2`
 - **Morado Claro:** `#9c27b0`, `#ba68c8`, `#ce93d8`
-- **Fuente:** Inter (Google Fonts)
+- **Fuente:** Google Sans (Google Fonts)
 
 ## 📱 Diseño Responsive
 
@@ -158,17 +164,19 @@ Optimizado para:
 - **HTML5** - Estructura semántica
 - **CSS3** - Estilos modernos y animaciones
 - **JavaScript Vanilla** - Interactividad sin dependencias
-- **Canvas API** - Ruleta de alta resolución
-- **Google Fonts** - Tipografía Inter
+- **Canvas API** - Ruleta de alta resolución con anti-aliasing
+- **Google Fonts** - Tipografía Google Sans
 - **Font Awesome 6.0** - Iconografía
 
 ## 📊 Estadísticas del Proyecto
 
 - **18 Slides** totales
-- **11 Contact Reasons** documentados
-- **24 Preguntas** en la ruleta
-- **10 Wedukas** integradas
-- **~7,000 líneas** de código
+- **11 Contact Reasons** documentados con guías detalladas
+- **21 Preguntas** en la ruleta de conocimiento
+- **10 Wedukas** integradas con enlaces oficiales
+- **8 Prototipos visuales** de errores comunes
+- **6 Widgets/Mockups** interactivos (Account Request, Prospects, Person View, etc.)
+- **~7,162 líneas** de código
 - **0 dependencias** externas (fuera de CDN)
 
 ## 👥 Créditos
@@ -189,6 +197,17 @@ Esta herramienta contiene información confidencial y debe ser utilizada únicam
 
 ## 🚀 Actualizaciones Recientes
 
+### Versión 2.1 (Enero 2026)
+- ✅ Fuente actualizada a Google Sans para mejor legibilidad
+- ✅ Tamaños de letra optimizados para auditorio (mínimo 0.8rem)
+- ✅ Ruleta optimizada con 21 preguntas validadas
+- ✅ Preguntas técnicas reemplazadas por soluciones prácticas
+- ✅ Corrección nomenclatura: "homescript" → "pantalla de inicio"
+- ✅ Corrección nomenclatura: "cross-sell" → "adquisición de productos adicionales"
+- ✅ Templates con nombres completos (invite-ric-product-opening-credit-card-a)
+- ✅ Pregunta de escalamiento corregida (Secondary Job)
+- ✅ Widgets visuales agregados en slides principales
+
 ### Versión 2.0 (Enero 2026)
 - ✅ Agregada Ruleta de Conocimiento interactiva
 - ✅ 24 preguntas con opciones múltiples
@@ -196,10 +215,9 @@ Esta herramienta contiene información confidencial y debe ser utilizada únicam
 - ✅ Feedback educativo mejorado
 - ✅ Canvas de alta resolución (anti-aliasing)
 - ✅ Diseño horizontal optimizado en índice
-- ✅ Eliminadas referencias a "código" innecesarias
 
 ### Versión 1.0 (Enero 2026)
-- ✅ Presentación inicial con 17 slides
+- ✅ Presentación inicial con 18 slides
 - ✅ 11 Contact Reasons completos
 - ✅ Wedukas integradas
 - ✅ Glosario de términos
