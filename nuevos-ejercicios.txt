@@ -1,0 +1,139 @@
+=== SLIDE 7: Producto no ofertado ===
+
+12) ¿Cuál es la contact reason del equipo de ACQ encargada de cerrar los contacto de usuarios (ya sean clientes o prospectos), que desean tener una Cuenta Corriente o Préstamos de libre inversión con Nu?
+
+a. Reactivación o adquisición de otros productos (Cliente o ex-cliente).
+b. Consulta o sugerencia de producto no ofertado.
+c. Dudas sobre el Resultado de Solicitud (Declinado, Cancelado o Erróneo)
+d. Dudas o problemas con programa de referidos.
+
+Respuesta correcta: B
+Explicación: Una cuenta corriente o un préstamo de libre inversión, son productos que aún Nu no ofrece. Por el momento en nuestro portafolio tenemos productos de cuenta de ahorro y tarjeta de crédito. Por ello, estos contactos se deben ser clasificados con la contact reason: Consulta o sugerencia de producto no ofertado.
+
+=== SLIDE 8: Errores en registro ===
+
+17) ¿Qué preguntas se clasificaron en la Contact Reason Inconvenientes en el proceso de adquisición - Cuenta Nu y Tarjeta de Crédito?
+
+a. Errores en el flujo de registro
+b. Reactivación o adquisición de otros productos (Cliente o ex-cliente).
+c. Dudas o problemas con programa de referidos.
+d. Ninguna de las anteriores
+e. Todas las anteriores
+
+Respuesta correcta: A
+Explicación: Esta CR se usa cuando los usuarios presentan problemas para actualizar y descargar la app, así como para cambiar de país; errores que afectan a usuarios en su proceso de registro a Nu (formulario en la app o pág. web y registro para usuarios invitados)
+
+18) Valerie se contacta indicando que tiene problemas para confirmar el link mágico en el proceso de registro, la Contact Reason correcta es reactivación o adquisición de otros productos (Cliente o ex-cliente). Esta afirmación es:
+
+a. Falso
+b. Verdadero
+
+Respuesta correcta: A (Falso)
+Explicación: Se trata de un correo de seguridad para validar la información de los usuarios en el flujo de registro. Este correo lo recibe el usuario en el momento en que llega a la siguiente pantalla en la app, mientras se encuentra realizando el proceso de registro, en el caso de presentar problemas debe ser clasificado en la Contact Reason: Errores en el flujo de registro
+
+=== SLIDE 9: Reactivación ===
+
+4) ¿Cuánto tarda en expirar la oferta de la tarjeta de crédito y la Cuenta Nu para clientes que tienen oferta Cross-Sell?
+
+a) 45 días y 100 días
+b) 45 días calendario y 180 días calendario
+c) 45 días tanto para Tarjeta de crédito y Cuenta Nu
+d) 100 días
+
+Respuesta correcta: B
+Explicación: 
+- Tarjeta de Crédito: Vigencia de la oferta en la app: 45 días calendario
+- Cuenta Nu: Vigencia de la oferta en la app: 180 días calendario
+
+5) El término "Cross-sell" en Nu hace referencia al ofrecimiento de productos adicionales, a través de la aplicación, sin la necesidad de volverse a inscribir en el formulario. Esta afirmación es:
+
+a. Verdadero
+b. Falso.
+
+Respuesta correcta: A (Verdadero)
+Explicación: El proceso de cross sell se refiere únicamente a la adquisición de nuevos productos desde la app a usuarios que ya son clientes.
+
+6) Luego de que un cliente cancela la Cuenta Nu, ¿es posible adquirir o recibir la oferta de la tarjeta de crédito si vuelve a aplicar?
+
+a) Verdadera.
+b) Falsa.
+
+Respuesta correcta: B (Falsa)
+Explicación: Debido a que, este caso es una limitante de Nu, debido a que si una persona cancela toda su relación con Nu con su cuenta de ahorros, al intentar volver a aplicar en el formulario, podrá reactivar la Cuenta Nu pero no recibir la oferta de tarjeta de crédito Nu.
+
+=== SLIDE 10: Programa de referidos ===
+
+(Sin pregunta específica en el PDF, crear una nueva)
+
+¿Cuál es el incentivo principal del programa de referidos de Nu Colombia?
+
+a) Descuentos en cuota de manejo
+b) Bonos en dinero por referidos exitosos
+c) Tarjetas gratis
+d) Puntos para viajes
+
+Respuesta correcta: B
+Explicación: El programa de referidos de Nu ofrece bonos en dinero tanto para el referidor como para el referido cuando este último completa exitosamente su proceso de registro y activación de producto.
+
+=== SLIDE 11: Registro e información ===
+
+9) ¿Qué debemos hacer en caso de que un prospecto solicite abandonar el proceso de vinculación o adquisición de NU?
+
+a. Indicarle al usuario no continuar con el registro desde el punto en el que quedó
+b. Sugerirle al Usuario eliminar la app.
+c. Los agentes generalistas y que no pertenezcan al squad de ACQ deberán hacer el proceso de escalamiento mediante el Secondary Job
+d. Solo los agentes de ACQ podrán hacer el proceso de desvinculación
+e. Reportar en jira en el canal de #col_acq_reports
+
+Respuesta correcta: C y D
+Explicación: Si un prospecto solicita realizar este proceso expresamente, los agentes de Acquisition deberán hacer el proceso de desvinculación a través del widget de "Account request", y para los agentes externos del Squad de ACQ, deberán hacer el proceso de Secondary Job. El incumplir la gestión de estas solicitudes o no radicarlas trae afectaciones legales a Nu como compañía.
+
+14) Cuando la solicitud para cancelar la invitación a Nu se recibe por email, ¿qué debe validarse?
+
+a) Que el prospecto conozca todos los productos de Nu.
+b) Que nos escriban desde una dirección de correo electrónico diferente.
+c) Que la solicitud provenga de la dirección de correo electrónico registrada a Nu.
+d) Que la solicitud la realice un cliente.
+
+Respuesta correcta: C
+Explicación: Que la solicitud provenga de la dirección de correo electrónico registrada, como filtro de verificación, con el propósito de validar que provenga directamente del prospecto interesado en cancelar la invitación.
+
+=== SLIDE 12: Dudas en app ===
+
+(Sin pregunta específica en el PDF, crear una nueva basada en contenido)
+
+¿Qué debe hacer un usuario que no visualiza el banner de Tarjeta de Crédito en su app?
+
+a) Esperar 48 horas y contactarse nuevamente
+b) Desinstalar y reinstalar la aplicación
+c) El agente debe crear un Secondary Job: Generar oferta Tarjeta de Crédito
+d) No hay nada que hacer, no es elegible
+
+Respuesta correcta: C
+Explicación: Toda solicitud de ayuda de clientes que quieran tener tarjeta de crédito y no vean la oferta en la App, debe ser escalada mediante Secondary Job, brindando la expectativa de resolución de 24 horas hábiles.
+
+=== SLIDE 13: Información adicional ===
+
+19) ¿Cuál es el tiempo estimado en el que RegSol da respuesta a los usuarios?
+
+a) 10 días
+b) 12 horas
+c) 5 días hábiles
+d) Ninguna de las anteriores
+
+Respuesta correcta: C
+Explicación: El tiempo estimado de respuesta es de 5 días hábiles. Si han pasado más de 5 días sin una respuesta, se debe escalar a través del trabajo secundario (Secondary Job).
+
+=== SLIDE 14: Campañas y Beneficios ===
+
+(Sin pregunta específica en el PDF, crear una nueva)
+
+¿Qué información debe verificar un agente antes de confirmar beneficios de una campaña a un cliente?
+
+a) Solo preguntar al cliente qué campaña vio
+b) Verificar en Wedukas y herramientas oficiales la vigencia y términos
+c) Confirmar cualquier beneficio que el cliente mencione
+d) Redirigir al cliente a redes sociales
+
+Respuesta correcta: B
+Explicación: Es fundamental verificar en fuentes oficiales (Wedukas, comunicados internos) la vigencia, términos y condiciones de cualquier campaña antes de confirmar beneficios al cliente, siguiendo el principio de transparencia radical.
